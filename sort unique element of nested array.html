@@ -1,0 +1,26 @@
+<html>
+<head>
+	<script>
+	/* return array which contains onlyh unique element */
+	function uniteUnique(arr) {
+	  var newArr = [];
+  		for (var i=0; i<arguments.length; i++){
+    	var x = arguments[i];
+    		for(var j=0; j<x.length; j++){
+      		var y = x[j];
+      			if(newArr.indexOf(y)<0){
+        			newArr.push(y);
+      			}
+    		}		
+ 		}
+  	return document.write(newArr);
+	}
+
+	window.onload= uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);
+	</script>
+
+</head>
+<body>
+
+</body>
+</html>

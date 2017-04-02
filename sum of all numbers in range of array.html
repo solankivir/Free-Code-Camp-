@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>2</title>
+<meta charset="UTF-8">
+<!-- sum of numbers between min to max of array -->
+<script type="text/javascript">
+    function sumAll(arr) {
+  var x = arr.reduce(function (a,b){
+    return Math.max(a,b);
+  });
+  var y = arr.reduce(function (a,b){
+    return Math.min(a,b);
+  });
+  var z = x-y;
+  var newArr = [];
+  var result = 0;
+  
+  for (var i=y; i<=x; i++){
+    newArr.push(i) ; 
+  }
+  for (var j = 0 ; j<newArr.length; j++){
+   result += newArr[j]; 
+  }
+  return document.write(result);
+}
+
+
+
+	window.onload = sumAll([1, 4]);
+    
+</script>
+</head>
+
+<body >
+
+
+</body>
+
+
+</html>

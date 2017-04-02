@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>2</title>
+<meta charset="UTF-8">
+<!-- sum of numbers between min to max of array -->
+<script type="text/javascript">
+
+
+function diffArray(arr1, arr2) {
+  var newArr = arr1.concat(arr2);
+  function check(item){
+  if (arr1.indexOf(item) === -1 || arr2.indexOf(item) === -1){
+  // Same, same; but different.
+  return item;
+  }}
+    return newArr.filter(check);
+}
+
+window.onload = diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
+ 
+    
+</script>
+</head>
+
+<body >
+
+
+</body>
+
+
+</html>

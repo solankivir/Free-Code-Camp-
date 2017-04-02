@@ -1,0 +1,30 @@
+<html>
+<head>
+	<script>
+	/* return array which contains onlyh unique element */
+	function primecount(){
+    var x = prompt("please enter number to find number of prime numbers less than your number value", "");
+    var sum = 0;
+    var noofcount = [];
+    for (var counter = 0; counter <= x; counter++) {
+      var notPrime = false;
+      for (var i = 2; i <= counter; i++) {
+        if (counter%i===0 && i!==counter) {
+            notPrime = true;
+        }
+      }
+        if (notPrime === false) {
+          document.write(counter + "<br>");
+        }
+    }
+    noofcount.push(counter);
+    document.write(noofcount);
+  }
+  window.onload = primecount();
+	</script>
+
+</head>
+<body>
+
+</body>
+</html>

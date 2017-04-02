@@ -1,0 +1,20 @@
+<html>
+<head>
+	<script>
+	/* return array which contains onlyh unique element */
+	function spinalCase(str) {
+  // "It's such a fine line between stupid, and clever."
+  // --David St. Hubbins
+  return document.write(str.split(/\s|_|(?=[A-Z])/).join('-').replace(/--/g, '-').toLowerCase() + '<br>');
+}
+
+
+	window.onload= spinalCase('This Is Spinal Tap'), spinalCase("thisIsSpinalTap"), spinalCase("The_Andy_Griffith_Show");
+
+	</script>
+
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>2</title>
+<meta charset="UTF-8">
+<!--  answer should return d -->
+<script type="text/javascript">
+function missingletter(str) {
+  for (var i=0; i<str.length; i++){
+    var x = str.charCodeAt(i);
+  	if (x !== str.charCodeAt(0) +i){
+  		return document.write(str.fromCharCode(x-1));
+  	}
+  }
+  	return document.write(undefined);
+  
+}
+
+window.onload = missingletter("abce");
+
+</script>
+</head>
+
+<body >
+
+
+</body>
+
+
+</html>

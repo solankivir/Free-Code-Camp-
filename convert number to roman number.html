@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>2</title>
+<meta charset="UTF-8">
+<!-- sum of numbers between min to max of array -->
+<script type="text/javascript">
+function convertToRoman(num) {
+  var decimalValue = [ 1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1 ];
+  var romanNumeral = [ 'M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I' ];
+
+  var romanized = '';
+
+  for (var index = 0; index < decimalValue.length; index++) {
+    while (decimalValue[index] <= num) {
+      romanized += romanNumeral[index];
+      num -= decimalValue[index];
+    }
+  }
+
+  return document.write(romanized + '<br>');
+}
+
+window.onload = convertToRoman(36) , convertToRoman(5) , convertToRoman(3), convertToRoman(10) ;
+
+
+</script>
+</head>
+
+<body >
+
+
+</body>
+
+
+</html>
